@@ -2,8 +2,58 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
+    /* 新增响应式布局 */
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
+/* 新增移动端适配 */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    .page {
+        width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+    }
+    
+    .book-container {
+        margin: 10px 0;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        border-radius: 8px;
+    }
+    
+    .book-container h2 {
+        font-size: 1.4rem;
+        margin-bottom: 8px;
+    }
+    
+    .book-container p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    button {
+        min-width: 140px;
+        padding: 12px 20px;
+        margin: 8px;
+        font-size: 1rem;
+        border-radius: 25px;
+        transition: opacity 0.3s;
+    }
+    
+    button:active {
+        opacity: 0.8;
+    }
+}
 h1 {
     text-align: center;
 }
@@ -37,6 +87,14 @@ h1 {
     display: none;
 }
 
+@media (max-width: 768px) {
+    #prev-page, #next-page {
+        width: 45%;
+        margin: 15px 2.5%;
+        padding: 12px 0;
+        font-size: 1.1rem;
+    }
+}
 #prev-page, #next-page {
     padding: 10px 20px;
     background-color: #ccc;

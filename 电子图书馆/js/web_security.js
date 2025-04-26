@@ -48,6 +48,12 @@ function downloadBook(bookName) {
     window.location.href = `${bookPath}?download=1`;
 }
 
+// 当前viewBook实现正确，但需要服务器配置支持
+function viewBook(bookName) {
+    // 更新为仓库名称XMAZM的绝对路径
+    const bookPath = `/XMAZM/网络安全/${bookName}.pdf`;
+    window.open(`/XMAZM/web/viewer.html?file=${encodeURIComponent(bookPath)}#toolbar=0`, '_blank');
+}
 document.querySelectorAll('.download-button').forEach((button, index) => {
     button.addEventListener('click', () => {
         downloadBook(`白帽子讲Web安全`);

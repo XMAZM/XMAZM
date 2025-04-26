@@ -43,16 +43,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function downloadBook(bookName) {
-    const bookPath = `./名著/${bookName}.pdf`; // 替换为你的书籍路径
-     // 添加一个查询参数以确保浏览器下载文件而不是打开页面
+    const bookPath = `./Python/${bookName}.pdf`; // 替换为你的书籍路径
+    // 添加一个查询参数以确保浏览器下载文件而不是打开页面
     window.location.href = `${bookPath}?download=1`;
 }
-
 function viewBook(bookName) {
-    const bookPath = `./名著/${bookName}.pdf`; 
+    const bookPath = `./science_fiction/${bookName}.pdf`; 
     window.open(bookPath, '_blank');
 }
-
 document.querySelectorAll('.download-button').forEach((button, index) => {
     button.addEventListener('click', () => {
         downloadBook(`红楼梦`);

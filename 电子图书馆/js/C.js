@@ -43,13 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function downloadBook(bookName) {
-    const bookPath = `./名著/${bookName}.pdf`; // 替换为你的书籍路径
-     // 添加一个查询参数以确保浏览器下载文件而不是打开页面
+    // 修正路径从"外语"改为"C语言"
+    const bookPath = `./C语言/${bookName}.pdf`;
     window.location.href = `${bookPath}?download=1`;
 }
 
 function viewBook(bookName) {
-    const bookPath = `./名著/${bookName}.pdf`; 
+    const bookPath = `./C语言/${bookName}.pdf`;
     window.open(bookPath, '_blank');
 }
 

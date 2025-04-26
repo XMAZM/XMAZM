@@ -47,7 +47,10 @@ function downloadBook(bookName) {
     // 添加一个查询参数以确保浏览器下载文件而不是打开页面
     window.location.href = `${bookPath}?download=1`;
 }
-
+function viewBook(bookName) {
+    const bookPath = `./外语/${bookName}.pdf`; 
+    window.open(bookPath, '_blank');
+}
 document.querySelectorAll('.download-button').forEach((button, index) => {
     button.addEventListener('click', () => {
         downloadBook(`红楼梦`);
