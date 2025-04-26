@@ -1,0 +1,59 @@
+body {
+    width: 1280px;
+    height: 700px;
+    font-family: Arial, sans-serif; /* 设置字体 */
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    background-color: #f0f0f0; /* 设置背景颜色 */
+    float: left;
+}
+
+.div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    color: white;
+    flex-direction: column; /* 将列方向改为垂直 */
+}
+
+.div1 li {
+    display: flex; /* 使用 flex 来排列列表项内容 */
+    margin: 30px;
+    list-style: none;
+}
+
+.div1 a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.div2{
+    height: 100%;
+    background-color: #f9f9f9; /* 设置背景颜色 */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+.div2 p{
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, sans-serif; /* 设置字体 */
+    text-align: center;
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 1px;
+    background-color: #333;
+    color: white;
+    clear: both;
+}

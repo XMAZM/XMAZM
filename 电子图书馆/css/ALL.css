@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.page {
+    width: calc(30% - 20px);
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow-y: hidden;
+}
+
+.box {
+    height: 100px;
+    background-color: lightblue;
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+#prev-page, #next-page {
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+}
